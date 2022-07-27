@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "github.com/dk-sirius/example/cmd/e-grpc/api";
+
+package api;
+
+// protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative xxx.proto
+service Echo{
+  rpc Say(RequestEcho)returns(ReplyEcho){}
+}
+
+message RequestEcho{
+  string name = 1;
+}
+
+message ReplyEcho{
+  string name = 1;
+}
+
