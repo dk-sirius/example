@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/dk-sirius/example/cmd/e-grpc/api"
-	"github.com/dk-sirius/example/cmd/e-grpc/server/echo"
-	"google.golang.org/grpc"
 	"log"
 	"net"
 	"os"
+
+	"github.com/dk-sirius/example/cmd/e-grpc/api"
+	"github.com/dk-sirius/example/cmd/e-grpc/server/echo"
+	"google.golang.org/grpc"
 )
 
 const port = ":8080"
